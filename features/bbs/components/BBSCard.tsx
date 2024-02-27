@@ -21,7 +21,7 @@ const BBSCard = ({ bbsData }: BBSDataProps) => {
           {content}
         </CardContent>
         <CardFooter className="flex justify-between">
-          <Link href={`/bbs/${id}`} className="text-blue-500">Read More</Link>
+          <Link href={`/posts/${id}`} className="text-blue-500">Read More</Link>
         </CardFooter>
       </Card>
     </div>
