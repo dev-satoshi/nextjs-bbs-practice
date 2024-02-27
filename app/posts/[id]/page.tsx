@@ -1,10 +1,11 @@
+import { devAPIEndpoint } from "@/constants/project";
 import { BBSData } from "@/features/bbs/types/types";
 import Link from 'next/link';
 import React from 'react'
 
 async function getDetailBBSData(id: number) {
   // Next13以降でSSGやSSR、ISRなどでデータフェッチングする場合は、fetch関数を使う
-  const response = await fetch(`http://localhost:3000/api/posts/${id}`, {
+  const response = await fetch(`${devAPIEndpoint}/api/posts/${id}`, {
     cache: "no-store",
   });
 
